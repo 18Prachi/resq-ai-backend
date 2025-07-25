@@ -2,7 +2,7 @@
 
 This is the backend service for **ResQ.AI**, an AI-powered emergency assistant that classifies emergency types based on user input (voice/text), and offers immediate, actionable guidance.
 
-> 🔗 Pairs with frontend: [ResQ.AI Frontend Repo](https://github.com/Sajal-Srivastava/resqai-frontend)
+> 🔗 Pairs with frontend: [ResQ.AI Frontend Repo](https://github.com/18Prachi/resq-ai)
 
 ---
 
