@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from transformers import pipeline
 import google.generativeai as genai
+import os
 
 
 app = Flask(__name__)
@@ -11,7 +12,7 @@ CORS(app)
 classifier = pipeline('sentiment-analysis')
 
 
-genai.configure(api_key="AIzaSyBr2K0aqQnrC2XVuiL5L-gzFPyTNAZCgmQ")
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 
 gemini = genai.GenerativeModel("models/gemini-1.5-pro")
